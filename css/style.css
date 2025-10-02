@@ -1,0 +1,328 @@
+/*-------------------------
+      Estilos Globales
+-------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+/*-------------------------
+           Header
+-------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #F6B103;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.banda-header {
+    display: flex;
+    align-items: center;
+}
+
+.banda-header img {
+    height: 50px;
+    width: 50px;
+}
+
+.titulo-header {
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/*-------------------------
+       Página: Inicio
+-------------------------*/
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #F6B103;
+}
+
+.titulo-principal-contenedor {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.texto-principal-contenedor {
+    font-size: 1.2em;
+    margin: 0 10%;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes-principal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FF8400;
+    border-radius: 20px;
+}
+
+.contenedor-imagenes-principal img {
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*-------------------------
+      Página: Servicios
+-------------------------*/
+.titulo-principal-servicios {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contenedor-principal-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.clases-ninios,
+.entrenamiento-adultos,
+.natacion-libre {
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    background-color: #FF8400;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.clases-ninios h1,
+.entrenamiento-adultos h1,
+.natacion-libre h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.clases-ninios p,
+.entrenamiento-adultos p,
+.natacion-libre p {
+    font-size: 1em;
+}
+
+/*-------------------------
+      Página: Horarios
+-------------------------*/
+.titulo-principal-horarios {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.contenedor-principal-horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.horarios,
+.precios {
+    height: 160px;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 30px;
+    padding: 30px 40px;
+    background-color: #FF8400;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.horarios h1,
+.precios h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.horarios p,
+.precios p {
+    font-size: 1em;
+}
+
+/*-------------------------
+      Página: Contacto
+-------------------------*/
+.titulo-principal-contacto {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.texto-principal-contacto {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contenido-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: left;
+}
+
+.formulario-contacto {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #FED8B1;
+    font-size: 1em;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto button {
+    background-color: #FF8400;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ubicacion {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #FF8400;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.ubicacion h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.ubicacion p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.mapa img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+/*-------------------------
+      Página: Nosotros
+-------------------------*/
+.descripcion-equipo {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #F6B103;
+    text-align: center;
+}
+
+.descripcion-equipo h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2.2em;
+}
+
+.descripcion-equipo p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.entrenadores {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.foto-entrenador {
+    width: 220px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FF8400;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.foto-entrenador img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+}
+
+.foto-entrenador h3 {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/*-------------------------
+           Footer
+-------------------------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #F6B103;
+    color: black;
+    font-size: 1em;
+}
+
+footer nav a {
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
